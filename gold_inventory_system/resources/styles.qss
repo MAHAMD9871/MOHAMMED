@@ -1,0 +1,61 @@
+/* Arabic-friendly light theme */
+QWidget {
+    font-family: "Noto Naskh Arabic", "Sans Serif";
+    font-size: 11pt;
+}
+
+QMainWindow, QDialog {
+    background: #fafafa;
+}
+
+QMenuBar {
+    background: #ffffff;
+}
+QMenuBar::item:selected {
+    background: #e0f2f1;
+}
+
+QToolBar {
+    background: #ffffff;
+    spacing: 8px;
+}
+
+QStatusBar {
+    background: #ffffff;
+}
+
+QPushButton {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+QPushButton:hover { background: #1565c0; }
+QPushButton:disabled { background: #b0bec5; color: #eceff1; }
+
+QLineEdit, QComboBox, QSpinBox, QDoubleSpinBox, QTextEdit, QPlainTextEdit {
+    background: #ffffff;
+    border: 1px solid #cfd8dc;
+    border-radius: 4px;
+    padding: 4px 6px;
+}
+
+QTableWidget, QTableView {
+    gridline-color: #eceff1;
+    selection-background-color: #bbdefb;
+    selection-color: #0d47a1;
+    alternate-background-color: #f5f5f5;
+}
+QHeaderView::section {
+    background: #eceff1;
+    border: none;
+    padding: 6px;
+    font-weight: 600;
+}
+
+/* Diff colors */
+.diff-increase { background: #90EE90; }
+.diff-decrease { background: #FFB6C1; }
+.diff-equal { background: #ffffff; }
+
